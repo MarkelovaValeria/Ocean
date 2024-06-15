@@ -1,0 +1,22 @@
+﻿
+<div>
+    <div>
+        <img src="@path" alt="Alternate Text" />
+        <p>@number</p>
+        <p>@ocean</p>
+    </div>
+    <div>
+        <p>@description</p>
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public string path { get; set; }
+    [Parameter]
+    public int number { get; set; }
+    [Parameter]
+    public string ocean { get; set; }
+    [Parameter]
+    public string description { get; set;  }
+}

@@ -1,0 +1,14 @@
+﻿<div>
+    <img src="@path" alt="Alternate Text" />
+    <h3>@locationName</h3>
+    <p>@description</p>
+</div>
+
+@code {
+    [Parameter]
+    public string path { get; set; }
+    [Parameter]
+    public string locationName { get; set; }
+    [Parameter]
+    public string description { get; set; }
+}
