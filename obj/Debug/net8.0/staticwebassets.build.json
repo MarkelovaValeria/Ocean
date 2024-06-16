@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "hWX/0F66bgNCVgnHkmvIL6/gbxtUagO+stAiFxxgKPs=",
+  "Hash": "NiXdAmnLkM1xoF9IVORgtkp8l6czULR9i4vC/Ooi2PA=",
   "Source": "Ocean",
   "BasePath": "_content/Ocean",
   "Mode": "Default",
@@ -91,6 +91,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.png"
+    },
+    {
+      "Identity": "C:\\Users\\Acer\\source\\repos\\Ocean\\Ocean\\wwwroot\\images\\Group 4.png",
+      "SourceId": "Ocean",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Acer\\source\\repos\\Ocean\\Ocean\\wwwroot\\",
+      "BasePath": "_content/Ocean",
+      "RelativePath": "images/Group 4.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\Group 4.png"
     }
   ]
 }

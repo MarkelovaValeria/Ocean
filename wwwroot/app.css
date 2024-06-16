@@ -10,3 +10,57 @@ html, body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
+.container {
+    width: 100%;
+    max-width: 1620px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+
+.header{
+    background-color: rgba(98,106,108, .39);
+    position:absolute;
+    z-index:10;
+    width: 100%;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+.header__logo {
+    color:white;
+    font-size:32px;
+    font-weight:bold;
+    text-transform:uppercase;
+    margin:0;
+}
+
+.header__nav{
+    display: flex;
+    gap: 105px;
+}
+
+.header__nav-link{
+    color:white;
+    font-size:24px;
+    text-decoration:none;
+    font-weight:400;
+}
+
+.intro{
+    min-height:100vh;
+    background-image:url('/images/Group 4.png');
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+
+.intro__inner{
+    padding-top:60px;
+
+}
+
