@@ -64,3 +64,46 @@ html, body {
 
 }
 
+
+.order-visiting{
+    background-image: url('/images/Ocean3.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat
+}
+
+.order-visiting__inner {
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.order-visiting__form {
+    display: flex;
+    flex-direction: column;
+    padding: 154px 160px 0;
+    gap: 58px;
+    background-color: rgb(9,14,19);
+    position:relative;
+}
+
+.order-visiting__text{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    margin-top: 116px;
+    gap: 106px;
+    width: 702px;
+    text-align:center;
+    margin: 106px auto 0;
+}
+.arrow-left {
+    position:absolute;
+    width: 0;
+    height: 0;
+    left:-50px;
+    top:95px;
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+    border-right: 50px solid rgb(9,14,19);
+}

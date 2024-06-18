@@ -1,10 +1,18 @@
+using Microsoft.EntityFrameworkCore;
 using Ocean.Components;
+using Ocean.Data;
+using Ocean.Services;
 
 var builder = WebApplication.CreateBuilder(args);
+
+var connection = builder.Configuration.GetConnectionString("DefaultConnection") ?? throw new NullReferenceException("No connection string in config");
 
 // Add services to the container.
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
+
+builder.Services.AddDbContextFactory<DataContext>((DbContextOptionsBuilder options) => options.UseSqlServer(connection));
+builder.Services.AddTransient<OceanService>();
 
 var app = builder.Build();
 

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "NiXdAmnLkM1xoF9IVORgtkp8l6czULR9i4vC/Ooi2PA=",
+  "Hash": "uc+kN7AilnpzINz5EEfZQStIwUL0+lWbWY34rt3vSQA=",
   "Source": "Ocean",
   "BasePath": "_content/Ocean",
   "Mode": "Default",
@@ -110,6 +110,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\Group 4.png"
+    },
+    {
+      "Identity": "C:\\Users\\Acer\\source\\repos\\Ocean\\Ocean\\wwwroot\\images\\Ocean3.png",
+      "SourceId": "Ocean",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Acer\\source\\repos\\Ocean\\Ocean\\wwwroot\\",
+      "BasePath": "_content/Ocean",
+      "RelativePath": "images/Ocean3.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\Ocean3.png"
     }
   ]
 }

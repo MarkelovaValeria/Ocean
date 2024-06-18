@@ -1,32 +1,46 @@
-﻿<div>
-    <div>
-        <h2></h2>
-        <p></p>
-    </div>
-    <div>
+﻿@page "/order"
+@using Ocean.Data.Models
+@using Ocean.Services
+@inject OceanService oceanService;
 
-        <form action="/" method="post">
-            <select>
-                <option value="value">text</option>
-                <option></option>
-                <option></option>
-                <option></option>
-            </select>
-            <select>
-                <option value="value">text</option>
-                <option></option>
-                <option></option>
-                <option></option>
-            </select>
-            <input type="type" name="name" value="" />
-            <input type="type" name="name" value="" />
-            <input type="type" name="name" value="" />
-            <input type="type" name="name" value="" />
-            <button type="submit"></button>
-            </form>
+<div class="order-visiting">
+    <div class="order-visiting__inner">
+        <div class="order-visiting__text">
+            <h2>Lorem ipsum</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada. Nullam ac erat ante. Proin facilisis, justo a mollis ultricies, ligula elit tincidunt justo, vitae consectetur risus risus ac neque. Phasellus quis risus ac nisi dignissim laoreet. Maecenas blandit aliquet lorem non sollicitudin. Duis ultricies ipsum at elit feugiat, sit amet pharetra nisi scelerisque. Vivamus eget vehicula lorem. In sit amet leo nec ipsum feugiat dictum sit amet non turpis.</p>
+        </div>
+
+        
+
+        <EditForm Model=@orders class="order-visiting__form">
+            <div class="arrow-left"></div>
+            <InputSelect @bind-Value=orders.guide class=" ">
+                <option value="guide1">Catherine</option>
+                <option value="guide2">Matthew</option>
+                <option value="guide3">Lilia</option>
+                <option value="guide4">Martin</option>
+            </InputSelect>
+            <InputSelect @bind-Value=orders.location class=" ">
+                <option value="location1">Pacific ocean</option>
+                <option value="location2">Arctic ocean</option>
+                <option value="locatoin3">Atlantic ocean</option>
+                <option value="location4">Indian ocean</option>
+            </InputSelect>
+            <InputDate @bind-Value=orders.date name="dateOrder" class="" placeholder=""/>
+            <InputSelect @bind-Value=orders.time class="">
+                <option value="10:00">10:00</option>
+                <option vlaue="15:00">15:00</option>
+                <option value="18:00">18:00</option>
+            </InputSelect>
+            <button type="submit" class="btn">Order</button>
+        </EditForm>
     </div>
 </div>
 
 @code {
-
+    Orders orders = new Orders();
+    private void ValidSFormSubmit()
+    {
+        
+    }
 }

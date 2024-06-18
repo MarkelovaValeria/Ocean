@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Ocean.Models
+namespace Ocean.Data.Models
 {
     public class Users
     {
@@ -10,6 +10,6 @@ namespace Ocean.Models
         public string password { get; set; }
         public string email { get; set; }
         public string phone { get; set; }
-        
+
     }
 }
