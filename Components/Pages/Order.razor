@@ -1,7 +1,9 @@
 ﻿@page "/order"
+@using Ocean.Data
 @using Ocean.Data.Models
 @using Ocean.Services
 @inject OceanService oceanService;
+@rendermode RenderMode.InteractiveServer
 
 <div class="order-visiting">
     <div class="order-visiting__inner">
@@ -12,35 +14,49 @@
 
         
 
-        <EditForm Model=@orders class="order-visiting__form">
+        <EditForm Model="@orders" OnValidSubmit="AddOrder" class="order-visiting__form" FormName="OrderForm">
             <div class="arrow-left"></div>
-            <InputSelect @bind-Value=orders.guide class=" ">
-                <option value="guide1">Catherine</option>
-                <option value="guide2">Matthew</option>
-                <option value="guide3">Lilia</option>
-                <option value="guide4">Martin</option>
+            <DataAnnotationsValidator />
+            <InputSelect @bind-Value="@orders.Guide" class="order-visiting__form-input">
+                <option value="">Select guide</option>
+                <option value="Catherine">Catherine</option>
+                <option value="Matthew">Matthew</option>
+                <option value="Lilia">Lilia</option>
+                <option value="Martin">Martin</option>
             </InputSelect>
-            <InputSelect @bind-Value=orders.location class=" ">
-                <option value="location1">Pacific ocean</option>
-                <option value="location2">Arctic ocean</option>
-                <option value="locatoin3">Atlantic ocean</option>
-                <option value="location4">Indian ocean</option>
+            <ValidationMessage For="@(() => orders.Guide)"  class="order-visiting__form-validation"/>
+            <InputSelect @bind-Value="@orders.Location" class="order-visiting__form-input">
+                <option value="">Select location</option>
+                <option value="Pacific ocean">Pacific ocean</option>
+                <option value="Arctic ocean">Arctic ocean</option>
+                <option value="Atlantic ocean">Atlantic ocean</option>
+                <option value="Indian ocean">Indian ocean</option>
             </InputSelect>
-            <InputDate @bind-Value=orders.date name="dateOrder" class="" placeholder=""/>
-            <InputSelect @bind-Value=orders.time class="">
+            <ValidationMessage For="@(() => orders.Location)" class="order-visiting__form-validation" />
+            <InputDate @bind-Value="@orders.Date" name="dateOrder" class="order-visiting__form-input" />
+            <InputSelect @bind-Value="@orders.Time" class="order-visiting__form-input">
+                <option value="">Select time</option>
                 <option value="10:00">10:00</option>
                 <option vlaue="15:00">15:00</option>
                 <option value="18:00">18:00</option>
             </InputSelect>
-            <button type="submit" class="btn">Order</button>
+            <ValidationMessage For="@(() => orders.Time)" class="order-visiting__form-validation" />
+            <InputText @bind-Value="@orders.UserFullName" class="order-visiting__form-input" />
+            <ValidationMessage For="@(() => orders.UserFullName)" class="order-visiting__form-validation" />
+            <InputText @bind-Value="@orders.UserEmail" class="order-visiting__form-input" />
+            <ValidationMessage For="@(() => orders.UserEmail)" class="order-visiting__form-validation" />
+            <button type="submit" class="order-visiting__form-btn">Order</button>
         </EditForm>
     </div>
 </div>
 
 @code {
-    Orders orders = new Orders();
-    private void ValidSFormSubmit()
+    private Orders orders = new Orders();
+    private void AddOrder(EditContext context)
     {
-        
+        Orders newOrder = orders;
+        orders = new Orders();
+        Console.WriteLine(orders.Guide);
+        oceanService.AddOrder(newOrder);
     }
 }

@@ -16,6 +16,7 @@ namespace Ocean.Services
             using (var context = _dbContextFactory.CreateDbContext())
             {
                 context.Users.Add(user);
+                context.SaveChanges();
             }
         }
 
@@ -24,6 +25,7 @@ namespace Ocean.Services
             using (var context = _dbContextFactory.CreateDbContext())
             {
                 context.Orders.Add(order);
+                context.SaveChanges();
             }
         }
     }
