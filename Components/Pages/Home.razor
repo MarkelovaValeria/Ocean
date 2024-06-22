@@ -1,53 +1,83 @@
 ﻿@page "/"
+@using Ocean.Data.Models
+@using Ocean.Services
+@inject OceanService oceanService;
+@rendermode RenderMode.InteractiveServer
 
 <PageTitle>Home</PageTitle>
 
 
     <div class="intro">
-        <div class="intro__inner">
-           <h1>OCEANARIUM</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada. Nullam ac erat ante. Proin facilisis, justo a mollis ultricies, ligula elit tincidunt justo, vitae consectetur risus risus ac neque. Phasellus quis risus ac nisi dignissim laoreet. Maecenas blandit aliquet lorem non sollicitudin. Duis ultricies ipsum at elit feugiat, sit amet pharetra nisi scelerisque. Vivamus eget vehicula lorem. In sit amet leo nec ipsum feugiat dictum sit amet non turpis.</p>
-            <div class="intro__btns">
-                <NavLink class="intro__btns-link" href="aboutUs">ABOUT US</NavLink>
-                <NavLink class="intro__btns-link" href="order">ORDER</NavLink>
-                <NavLink class="intro__btns-link" href="shop">SHOP</NavLink>
+        <div class="main-container">
+            <div class="intro__inner">
+                <h1>OCEANARIUM</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada. Nullam ac erat ante. Proin facilisis, justo a mollis ultricies, ligula elit tincidunt justo, vitae consectetur risus risus ac neque. Phasellus quis risus ac nisi dignissim laoreet. Maecenas blandit aliquet lorem non sollicitudin. Duis ultricies ipsum at elit feugiat, sit amet pharetra nisi scelerisque. Vivamus eget vehicula lorem. In sit amet leo nec ipsum feugiat dictum sit amet non turpis.</p>
+                <div class="intro__btns">
+                    <NavLink class="intro__btns-link" href="aboutUs">ABOUT US</NavLink>
+                    <NavLink class="intro__btns-link" href="order">ORDER</NavLink>
+                    <NavLink class="intro__btns-link" href="shop">SHOP</NavLink>
+                </div>
             </div>
         </div>
     </div>
     <div class="main-content">
-    <div>
-        <div>
-            <Ocean1 path="" number="1" ocean="Pacific Ocean" description="Quisque cursus, metus vitae pharetra auctor, sem massa mattis sem." />
-            <Ocean1 path="" number="2" ocean="Arctic Ocean" description="Quisque cursus, metus vitae pharetra auctor, sem massa mattis sem." />
-            <Ocean1 path="" number="3" ocean="Atlantic Ocean" description="Quisque cursus, metus vitae pharetra auctor, sem massa mattis sem." />
-            <Ocean1 path="" number="4" ocean="Indian Ocean" description="Quisque cursus, metus vitae pharetra auctor, sem massa mattis sem." />
+        <div class="ocean">
+            <div class="main-container">
+                <div class="ocean__description">
+                    <Ocean1 classes="ocean-card--text-left" path="/images/Oceans/1.png" number="1" ocean="Pacific Ocean" description="Quisque cursus, metus vitae pharetra auctor, sem massa mattis sem." />
+                    <Ocean1 classes="ocean-card--reverse" path="/images/Oceans/2.png" number="2" ocean="Arctic Ocean" description="Quisque cursus, metus vitae pharetra auctor, sem massa mattis sem." />
+                    <Ocean1 path="/images/Oceans/3.png" number="3" ocean="Atlantic Ocean" description="Quisque cursus, metus vitae pharetra auctor, sem massa mattis sem." />
+                    <Ocean1 classes="ocean-card--reverse ocean-card--text-right" path="/images/Oceans/4.png" number="4" ocean="Indian Ocean" description="Quisque cursus, metus vitae pharetra auctor, sem massa mattis sem." />
+                </div>
+                <p class="ocean__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada. Nullam ac erat ante. Proin facilisis, justo a mollis ultricies, ligula elit tincidunt justo, vitae consectetur risus risus ac neque. Phasellus quis risus ac nisi dignissim laoreet. Maecenas blandit aliquet lorem non sollicitudin. Duis ultricies ipsum at elit feugiat, sit amet pharetra nisi scelerisque.
+                </p>
+            </div>
         </div>
-        <div>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada. Nullam ac erat ante. Proin facilisis, justo a mollis ultricies, ligula elit tincidunt justo, vitae consectetur risus risus ac neque. Phasellus quis risus ac nisi dignissim laoreet. Maecenas blandit aliquet lorem non sollicitudin. Duis ultricies ipsum at elit feugiat, sit amet pharetra nisi scelerisque.
-            </p>
+        <div class="about">
+            <div class="main-container">
+                <div class="about__inner">
+                     <h2>About Us</h2>
+                    
+                    <Locations path="/images/Locations/1.jpeg" locationName="Pacific Ocean" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada. Nullam ac erat ante. Proin facilisis, justo a mollis ultricies, ligula elit tincidunt justo, vitae consectetur risus risus ac neque." />
+                    <Locations classes="locations--reverse" path="/images/Locations/new2.jpeg" locationName="Arctic Ocean" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada. Nullam ac erat ante. Proin facilisis, justo a mollis ultricies, ligula elit tincidunt justo, vitae consectetur risus risus ac neque." />
+                    <Locations path="/images/Locations/new3.jpeg" locationName="Atlantic Ocean" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada. Nullam ac erat ante. Proin facilisis, justo a mollis ultricies, ligula elit tincidunt justo, vitae consectetur risus risus ac neque." />
+                    <Locations classes="locations--reverse" path="/images/Locations/4.jpeg" locationName="Indian Ocean" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada. Nullam ac erat ante. Proin facilisis, justo a mollis ultricies, ligula elit tincidunt justo, vitae consectetur risus risus ac neque." />
+                </div>
+            </div>   
         </div>
-
-    </div>
-    <div>
-        <h2>About Us</h2>
-
-        <Locations path="" locationName="Pacific Ocean" description="" />
-        <Locations path="" locationName="Arctic Ocean" description="" />
-        <Locations path="" locationName="Atlantic Ocean" description="" />
-        <Locations path="" locationName="Indian Ocean" description="" />
-    </div>
-    <div>
-        <h2>Employees</h2>
-        <Employees path="" name="Catherine " description="Lorem ipsum dolor sit amet." />
-        <Employees path="" name="Matthew " description="Lorem ipsum dolor sit amet." />
-        <Employees path="" name="Lilia " description="Lorem ipsum dolor sit amet." />
-        <Employees path="" name="Martin " description="Lorem ipsum dolor sit amet." />
-    </div>
+        <div class="employers">
+            <div class="main-container">
+                <div class="employers__inner">
+                    <h2>Employers</h2>
+                    
+                @foreach (var employer in employersList)
+                {
+                    <Employees id="@employer.Id" path="@employer.PathPhoto" name="@employer.FullName" description="@employer.DescriptionEmployer" />
+                }
+                
+                </div>
+            </div>
+        <img class="bubbles first" src="/images/Bubbles/1.png" alt="Alternate Text" />
+        <img class="bubbles second" src="/images/Bubbles/2.png" alt="Alternate Text" />
+        <img class="bubbles third" src="/images/Bubbles/3(1).png" alt="Alternate Text" />
+        <img class="bubbles fourth" src="/images/Bubbles/3(2).png" alt="Alternate Text" />
+        <img class="bubbles fifth" src="/images/Bubbles/4(1).png" alt="Alternate Text" />
+        <img class="bubbles sixth" src="/images/Bubbles/4(2).png" alt="Alternate Text" />
+        </div>
     </div>
    
-    <div>
+    <div class="footer">
         <img src="#" alt="Alternate Text" />
         <img src="#" alt="Alternate Text" />
         <img src="#" alt="Alternate Text" />
     </div>
+
+@code{
+    public List<Employers> employersList = new List<Employers>();
+
+    protected override void OnInitialized()
+    {
+        employersList = oceanService.GetEmployers();
+    }
+}

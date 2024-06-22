@@ -16,7 +16,8 @@ namespace Ocean.Data
         public DbSet<Employers> Employers { get; set; }
         public DbSet<Animal> Animals { get; set; }
 
-        protected override void OnModelCreating(ModelBuilder modelBuilder) => modelBuilder.Entity<Users>(entity =>
+        protected override void OnModelCreating(ModelBuilder modelBuilder) {
+            modelBuilder.Entity<Users>(entity =>
         {
             entity.HasKey(e => e.Id);
             entity.Property(e => e.UserName).IsRequired().HasMaxLength(20);
@@ -24,6 +25,13 @@ namespace Ocean.Data
             entity.Property(e => e.Password).IsRequired().HasMaxLength(8);
             entity.HasMany(e => e.Orders).WithOne(e => e.Users).HasForeignKey(e => e.UsersId).IsRequired(false);
         });
+            modelBuilder.Entity<Employers>().HasData(
+                new Employers {Id=1, FullName="Catherine Shevchenko", DescriptionEmployer= "Lorem ipsum dolor sit amet.", PathPhoto="/images/Employers/1.jpeg" },
+                new Employers {Id=2, FullName= "Matthew Tkachenko", DescriptionEmployer= "Lorem ipsum dolor sit amet.", PathPhoto= "/images/Employers/2.jpeg" },
+                new Employers {Id=3, FullName = "Lilia Petrenko", DescriptionEmployer = "Lorem ipsum dolor sit amet.", PathPhoto = "/images/Employers/3.jpeg" },
+                new Employers {Id=4, FullName = "Martin Goncharenko", DescriptionEmployer = "Lorem ipsum dolor sit amet.", PathPhoto = "/images/Employers/4.jpeg" }
+                );
+        }
 
         
        

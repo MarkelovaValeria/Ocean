@@ -16,6 +16,12 @@ html, body {
     margin: 0 auto;
     padding: 0 10px;
 }
+.main-container {
+    width: 100%;
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
 
 
 .header{
@@ -83,7 +89,7 @@ html, body {
     display: flex;
     width: 100%;
     margin-top: auto;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 .intro__btns-link {
     color: white;
@@ -169,4 +175,196 @@ html, body {
 .order-visiting__form-btn:hover {
     background-color: #5EA3E8;
     color: white;
+}
+
+.ocean{
+    padding-top:170px;
+}
+
+.ocean__description{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+.ocean-card{
+    display:flex;
+    flex-direction:column;
+    text-align:center;
+    gap: 30px;
+    width:17%;
+    color:#e0e0e0;
+    align-items: center;
+}
+.ocean-card.ocean-card--reverse{
+    flex-direction:column-reverse;
+}
+
+.ocean-card.ocean-card--text-left{
+    align-items: flex-start;
+    text-align:left;
+}
+.ocean-card.ocean-card--text-right{
+    align-items:flex-end;
+    text-align:right;
+}
+.ocean-card__photo{
+    position: relative;
+    display: block;
+    width:170px;
+}
+.ocean-card__photo>img{
+    width: 170px;
+    height:auto;
+}
+
+.ocean-card__photo > span {
+    position: absolute;
+    top: 13px;
+    left: 13px;
+    background-color: rgba(113,113,113,.7);
+    padding: 7px 14px;
+    font-size: 18px;
+}
+
+.ocean-card__photo > p {
+    position: absolute;
+    background-color: rgba(113,113,113,.7);
+    width:100%;
+    text-align:center;
+    padding: 5px;
+    bottom:4px;
+}
+
+.ocean__text{
+    margin: 150px auto;
+    width:70%;
+    text-align: center;
+    color: #e0e0e0;
+    font-size: 18px;
+}
+.about__inner{
+    display: flex;
+    flex-direction:column;
+    gap: 150px;
+}
+
+.about__inner>h2{
+    color: white;
+    text-align:center;
+    font-size: 30px;
+}
+
+.locations{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.locations__text{
+    text-align: center;
+    color: #e0e0e0;
+    width: 40%;
+}
+.locations__text>h3{
+    font-size: 24px;
+}
+.locations__text>p{
+    margin-top: 20px;
+}
+.locations.locations--reverse{
+    flex-direction:row-reverse;
+}
+ .locations>img{
+     border: 4px solid white;
+     width: 450px;
+     height: 290px;
+ }
+.employers-card{
+    display:flex;
+    gap: 20px;
+    align-items: center;
+    color: #e0e0e0;
+}
+
+.employers-card > img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    box-shadow: 0 0 50px 7px #4079B3;
+}
+
+.employers-card.employers-card--reverse{
+     flex-direction:row-reverse
+ }
+
+.employers__inner{
+    display: flex;
+    flex-direction: column;
+    gap: 215px;
+    padding: 170px 0 430px;
+}
+
+.employers__inner>h2{
+    font-size: 30px;
+    color:white;
+    text-align:center;
+}
+
+.employers-card--1{
+    padding-left: 350px;
+}
+.employers-card--2{
+    padding-right:310px;
+}
+.employers-card--3{
+    padding-left:115px
+}
+.employers-card--4{
+    padding-right: 280px;
+}
+.employers{
+    position: relative;
+}
+.bubbles{
+    position:absolute;
+}
+.bubbles.first{
+   top:559px;
+   left:500px;
+   transform:scale(0.8);
+
+}
+.bubbles.second {
+    top: 860px;
+    right:-25px;
+    transform: scale(0.8);
+}
+.bubbles.third{
+    top: 750px;
+    left:-20px;
+    transform: scale(0.8);
+}
+.bubbles.fourth{
+    top: 1287px;
+    left:-35px;
+    transform: scale(0.8);
+}
+.bubbles.fifth{
+    top: 1295px;
+    right:-60px;
+    transform: scale(0.8);
+}
+.bubbles.sixth{
+    top: 1675px;
+    right:-55px;
+    transform: scale(0.8);
+}
+.footer {
+    background-image: url('/images/footer/footer2.png');
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    height:500px;
 }

@@ -74,6 +74,36 @@ namespace Ocean.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Employers");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            DescriptionEmployer = "Lorem ipsum dolor sit amet.",
+                            FullName = "Catherine Shevchenko",
+                            PathPhoto = "/images/Employers/1.jpeg"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            DescriptionEmployer = "Lorem ipsum dolor sit amet.",
+                            FullName = "Matthew Tkachenko",
+                            PathPhoto = "/images/Employers/2.jpeg"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            DescriptionEmployer = "Lorem ipsum dolor sit amet.",
+                            FullName = "Lilia Petrenko",
+                            PathPhoto = "/images/Employers/3.jpeg"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            DescriptionEmployer = "Lorem ipsum dolor sit amet.",
+                            FullName = "Martin Goncharenko",
+                            PathPhoto = "/images/Employers/4.jpeg"
+                        });
                 });
 
             modelBuilder.Entity("Ocean.Data.Models.Orders", b =>

@@ -17,12 +17,92 @@
       "PackagePath": "staticwebassets\\favicon.png"
     },
     {
+      "Id": "C:\\Users\\Acer\\source\\repos\\Ocean\\Ocean\\wwwroot\\images\\Bubbles\\1.png",
+      "PackagePath": "staticwebassets\\images\\Bubbles\\1.png"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\source\\repos\\Ocean\\Ocean\\wwwroot\\images\\Bubbles\\2.png",
+      "PackagePath": "staticwebassets\\images\\Bubbles\\2.png"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\source\\repos\\Ocean\\Ocean\\wwwroot\\images\\Bubbles\\3(1).png",
+      "PackagePath": "staticwebassets\\images\\Bubbles\\3(1).png"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\source\\repos\\Ocean\\Ocean\\wwwroot\\images\\Bubbles\\3(2).png",
+      "PackagePath": "staticwebassets\\images\\Bubbles\\3(2).png"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\source\\repos\\Ocean\\Ocean\\wwwroot\\images\\Bubbles\\4(1).png",
+      "PackagePath": "staticwebassets\\images\\Bubbles\\4(1).png"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\source\\repos\\Ocean\\Ocean\\wwwroot\\images\\Bubbles\\4(2).png",
+      "PackagePath": "staticwebassets\\images\\Bubbles\\4(2).png"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\source\\repos\\Ocean\\Ocean\\wwwroot\\images\\Employers\\1.jpeg",
+      "PackagePath": "staticwebassets\\images\\Employers\\1.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\source\\repos\\Ocean\\Ocean\\wwwroot\\images\\Employers\\2.jpeg",
+      "PackagePath": "staticwebassets\\images\\Employers\\2.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\source\\repos\\Ocean\\Ocean\\wwwroot\\images\\Employers\\3.jpeg",
+      "PackagePath": "staticwebassets\\images\\Employers\\3.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\source\\repos\\Ocean\\Ocean\\wwwroot\\images\\Employers\\4.jpeg",
+      "PackagePath": "staticwebassets\\images\\Employers\\4.jpeg"
+    },
+    {
       "Id": "C:\\Users\\Acer\\source\\repos\\Ocean\\Ocean\\wwwroot\\images\\Group 4.png",
       "PackagePath": "staticwebassets\\images\\Group 4.png"
     },
     {
+      "Id": "C:\\Users\\Acer\\source\\repos\\Ocean\\Ocean\\wwwroot\\images\\Locations\\1.jpeg",
+      "PackagePath": "staticwebassets\\images\\Locations\\1.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\source\\repos\\Ocean\\Ocean\\wwwroot\\images\\Locations\\4.jpeg",
+      "PackagePath": "staticwebassets\\images\\Locations\\4.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\source\\repos\\Ocean\\Ocean\\wwwroot\\images\\Locations\\new2.jpeg",
+      "PackagePath": "staticwebassets\\images\\Locations\\new2.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\source\\repos\\Ocean\\Ocean\\wwwroot\\images\\Locations\\new3.jpeg",
+      "PackagePath": "staticwebassets\\images\\Locations\\new3.jpeg"
+    },
+    {
       "Id": "C:\\Users\\Acer\\source\\repos\\Ocean\\Ocean\\wwwroot\\images\\Ocean3.png",
       "PackagePath": "staticwebassets\\images\\Ocean3.png"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\source\\repos\\Ocean\\Ocean\\wwwroot\\images\\Oceans\\1.png",
+      "PackagePath": "staticwebassets\\images\\Oceans\\1.png"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\source\\repos\\Ocean\\Ocean\\wwwroot\\images\\Oceans\\2.png",
+      "PackagePath": "staticwebassets\\images\\Oceans\\2.png"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\source\\repos\\Ocean\\Ocean\\wwwroot\\images\\Oceans\\3.png",
+      "PackagePath": "staticwebassets\\images\\Oceans\\3.png"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\source\\repos\\Ocean\\Ocean\\wwwroot\\images\\Oceans\\4.png",
+      "PackagePath": "staticwebassets\\images\\Oceans\\4.png"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\source\\repos\\Ocean\\Ocean\\wwwroot\\images\\footer\\Group 20.png",
+      "PackagePath": "staticwebassets\\images\\footer\\Group 20.png"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\source\\repos\\Ocean\\Ocean\\wwwroot\\images\\footer\\footer2.png",
+      "PackagePath": "staticwebassets\\images\\footer\\footer2.png"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Ocean.Microsoft.AspNetCore.StaticWebAssets.props",

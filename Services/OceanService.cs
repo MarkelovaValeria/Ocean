@@ -28,5 +28,13 @@ namespace Ocean.Services
                 context.SaveChanges();
             }
         }
+
+        public List<Employers> GetEmployers()
+        {
+            using (var context = _dbContextFactory.CreateDbContext())
+            {
+                return context.Employers.ToList();
+            }
+        }
     }
 }

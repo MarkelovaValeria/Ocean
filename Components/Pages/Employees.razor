@@ -1,10 +1,15 @@
-﻿<div>
+﻿<div class="@(id%2==0? "employers-card--reverse":"") employers-card employers-card--@id">
     <img src="@path" alt="Alternate Text" />
-    <h3>@name</h3>
-    <p>@description</p>
+    <div class="employers-card__text">
+        <h3>@name</h3>
+        <p>@description</p>
+    </div>
+    
 </div>
 
 @code {
+    [Parameter]
+    public int id { get; set; }
     [Parameter]
     public string path { get; set; }
     [Parameter]

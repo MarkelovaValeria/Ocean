@@ -1,16 +1,16 @@
 ﻿
-<div>
-    <div>
+<div class="@classes ocean-card">
+    <div class="ocean-card__photo">
         <img src="@path" alt="Alternate Text" />
-        <p>@number</p>
+        <span>@number</span>
         <p>@ocean</p>
     </div>
-    <div>
-        <p>@description</p>
-    </div>
+        <p class="ocean-card__description">@description</p>
 </div>
 
 @code {
+    [Parameter]
+    public string classes { get; set; }
     [Parameter]
     public string path { get; set; }
     [Parameter]
