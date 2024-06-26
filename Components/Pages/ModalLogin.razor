@@ -1,0 +1,100 @@
+﻿
+@using Ocean.Data.Login
+@using Ocean.Data.Models
+@using Ocean.Services
+@inject OceanService oceanService
+@inject LogedInUser logedInUser
+@rendermode RenderMode.InteractiveServer
+<div class="modal-login @(isOpen? "open":"")">
+    <div class="modal-login__inner">
+        <button @onclick="eventOnModalClose" class="modal-login__close-btn"><svg fill="white" width="20px" height="20px" viewBox="-3 -3 36.00 36.00" xmlns="http://www.w3.org/2000/svg" stroke="white" stroke-width="0.1" transform="rotate(0)matrix(1, 0, 0, 1, 0, 0)"><g id="SVGRepo_bgCarrier" stroke-width="0" transform="translate(0,0), scale(1)"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M29.484 0c-.13.004-.252.057-.343.15L17.164 12.13c-.49.47.235 1.197.706.707L29.846.857c.325-.318.1-.857-.363-.857zM12.488 17c-.13.004-.25.058-.34.15L.162 29.14c-.486.467.233 1.186.7.7L12.848 17.85c.325-.313.093-.85-.36-.85zM.5 0a.5.5 0 0 0-.348.86L29.14 29.845a.5.5 0 1 0 .706-.706L.86.152A.5.5 0 0 0 .5 0z"></path></g></svg></button>
+        <div class="modal-login__text">
+            <h2>"Lorem ipsum</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.</p>
+        </div>
+        <div class="modal-login__btns">
+            @if (login.Equals("isLogin"))
+            {
+                <p>Login</p>
+                <EditForm Model="@userLog" OnValidSubmit="LoginUser" class="modal-login__form login">
+                    <DataAnnotationsValidator/>
+                    <InputText class="modal-login__form-input" @bind-Value="userLog.Email" placeholder="Enter email" />
+                    <ValidationMessage For="@(()=>userLog.Email)" class="order-visiting__form-validation" />
+                    <InputText class="modal-login__form-input" @bind-Value="userLog.Password" placeholder="Enter password" type="password" />
+                    <ValidationMessage For="@(()=>userLog.Password)" class="order-visiting__form-validation" />
+                    <button type="submit" class="modal-login__form-btn">Login</button>
+                </EditForm>
+            }
+            else if (login.Equals("isRegister"))
+            {
+                <h2>Register</h2>
+                <EditForm Model="@users" OnValidSubmit="LoginUser" class="modal-login__form register">
+                    <DataAnnotationsValidator />
+                    <InputText @bind-Value="users.Surname" class="modal-login__form-input" placeholder="Enter surname"/>
+                    <ValidationMessage For="@(()=>users.Surname)" class="order-visiting__form-validation"  />
+                    <InputText @bind-Value="users.UserName" class="modal-login__form-input" placeholder="Enter name" />
+                    <ValidationMessage For="@(()=>users.UserName)" class="order-visiting__form-validation" />
+                    <InputText @bind-Value="users.Password" class="modal-login__form-input" type="password" placeholder="Enter password" />
+                    <ValidationMessage For="@(()=>users.Password)" class="order-visiting__form-validation"  />
+                    <InputText @bind-Value="users.Phone" class="modal-login__form-input" placeholder="Enter phone" />
+                    <ValidationMessage For="@(()=>users.Phone)" class="order-visiting__form-validation"  />
+                    <InputText @bind-Value="users.Email" class="modal-login__form-input" placeholder="Enter email" />
+                    <ValidationMessage For="@(()=>users.Email)"  class="order-visiting__form-validation"/>
+                    <button type="submit" class="modal-login__form-btn" @onclick="AddUser">Register</button>
+                </EditForm>
+            }
+            else
+            {
+                <button @onclick="@(()=>ChangeLoginMethod("isRegister"))">Register</button>
+                <span> </span>
+                <button @onclick="@(()=>ChangeLoginMethod("isLogin"))">Login</button>
+            }
+            
+        </div>
+    </div>
+</div>
+
+@code {
+    private Users users = new Users();
+    private LoginUser userLog = new LoginUser();
+    private void AddUser()
+    {
+        Users newUser = users;
+        users = new Users();
+        Console.WriteLine("addUser");
+        oceanService.AddUser(newUser);
+        logedInUser.IsLogedIn = true;
+        logedInUser.users = newUser;
+        login = "";
+    }
+    [Parameter]
+    public EventCallback eventOnModalClose { get; set; }
+    [Parameter]
+    public bool isOpen { get; set; }
+    private void LoginUser()
+    {
+        Console.WriteLine("addUser");
+        Users newUser = oceanService.GetUser(userLog.Email, userLog.Password);
+        if(newUser!=null)
+        {
+            Console.WriteLine(newUser);
+            userLog = new LoginUser();
+            logedInUser.IsLogedIn = true;
+            logedInUser.users = newUser;
+            login = "";
+        }
+        else
+        {
+            Console.WriteLine("error");
+        }
+    }
+
+
+
+    private string login = "";
+
+    private void ChangeLoginMethod(string str)
+    {
+        login = str;
+    }
+}

@@ -1,15 +1,35 @@
-﻿<header class="header">
+﻿@using Ocean.Data.Login
+@inject LogedInUser logedInUser;
+
+<header class="header">
     <div class="container">
         <div class="header__inner">
             <h3 class="header__logo">OCEANIA</h3>
             <nav class="header__nav">
                 <NavLink class="header__nav-link" href="/">Home</NavLink>
-                <NavLink class="header__nav-link" href="#">Login</NavLink>
-                <NavLink class="header__nav-link" href="#">Animal</NavLink>
+                <NavLink class="header__nav-link" href="/animal">Animal</NavLink>
+                @if (logedInUser.IsLogedIn)
+                {
+                    <NavLink class="header__nav-link" href="/account">Account</NavLink>
+
+                }
+                else
+                {
+                    <button class="header__nav-link" @onclick="Open">Login</button>
+
+                }
             </nav>
         </div>
     </div>
 </header>
-@code {
 
+@code {
+    [Parameter]
+    public Action eventOnModalOpen { get; set; }
+
+    public void Open()
+    {
+        eventOnModalOpen.Invoke();
+    }
 }
+

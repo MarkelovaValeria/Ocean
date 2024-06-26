@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using Ocean.Components;
 using Ocean.Data;
+using Ocean.Data.Login;
 using Ocean.Services;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -13,6 +14,7 @@ builder.Services.AddRazorComponents()
 
 builder.Services.AddDbContextFactory<DataContext>((DbContextOptionsBuilder options) => options.UseSqlServer(connection));
 builder.Services.AddTransient<OceanService>();
+builder.Services.AddSingleton<LogedInUser>();
 
 var app = builder.Build();
 

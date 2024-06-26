@@ -10,6 +10,12 @@ html, body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
+button{
+    background:none;
+    border:none;
+    cursor: pointer;
+}
+
 .container {
     width: 100%;
     max-width: 1620px;
@@ -57,11 +63,122 @@ html, body {
     font-weight:400;
 }
 
-.intro{
-    background-image:url('/images/Group 4.png');
-    background-size:cover;
-    background-position:center;
-    background-repeat:no-repeat;
+.modal-login {
+    display:none;
+    justify-content:center;
+    align-items:center;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(250px);
+    z-index: 10;
+    top:0;
+}
+
+.modal-login.open{
+    display:flex;
+}
+.modal-login__inner {
+    position: relative;
+    display:flex;
+    justify-content:space-between;
+    width: 75%;
+    height: 80%;
+    background-image: url(/images/modalBG.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius:40px;
+    padding:0 100px;
+    color:#e0e0e0;
+}
+
+.modal-login__btns{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;
+    padding:0 80px;
+    background-color:rgba(18,65,69,.8);
+    gap: 15px;
+}
+
+.modal-login__close-btn{
+    position:absolute;
+    top:20px;
+    right: 20px;
+}
+
+.modal-login__text {
+    width: 45%;
+    margin-top: auto;
+    padding-bottom: 60px;
+}
+.modal-login__text>h2{
+    margin-bottom:20px;
+}
+
+.modal-login__btns>button{
+   color:#e0e0e0;
+   font-size: 23px;
+}
+.modal-login__btns>button:hover{
+    color:white;
+   transform:scale(1.1);
+}
+.modal-login__btns>span{
+    background-color: #e0e0e0;
+    height: 1px;
+    width: 100%;
+
+}
+
+.modal-login__form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.modal-login__form-input {
+    border: none;
+    width: 200px;
+    padding: 3px 5px;
+    background-color: rgb(255,255,255);
+    border-radius: 12px;
+    outline: none;
+}
+
+.modal-login__form-btn {
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 12px;
+    font-size: 13px;
+    background-color: white;
+
+}
+
+.account{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 220px 0 0;
+}
+.account__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.intro {
+    background-image: url('/images/Home.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .intro__inner {
@@ -103,7 +220,7 @@ html, body {
 }
 
 .main-content {
-    background: linear-gradient(#01101F 0%, #0E3459 50%, #01101F 100%);
+    background: linear-gradient(#000409 0%, #0E3459 50%, #000409 100%);
 }
 
 .order-visiting{
@@ -171,6 +288,7 @@ html, body {
     cursor:pointer;
     border-radius: 12px;
     font-size: 15px;
+    background-color: white;
 }
 .order-visiting__form-btn:hover {
     background-color: #5EA3E8;
@@ -362,9 +480,146 @@ html, body {
     transform: scale(0.8);
 }
 .footer {
-    background-image: url('/images/footer/footer2.png');
+    background-image: url('/images/footer/footer4.png');
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
     height:500px;
 }
+.animal {
+    
+    background-color: #01040B;
+}
+
+.animal-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1620px;
+    margin: 0 auto;
+    padding: 0 10px;
+    color: white;
+}
+.animal-header>p{
+    bottom:0;
+    left:0;
+}
+.animal-header>img{
+    position: relative;
+    object-fit: cover;
+    width:60%;
+    height:auto; 
+}
+.animal-header > h1 {
+    position: absolute;
+    top:220px;
+    font-size: 90px;
+    background: linear-gradient(90deg, #729DEC 0%, #FFFFFF 54%, #FD9944 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.animal-container {
+    width: 100%;
+    max-width: 1620px;
+    margin: 0 auto;
+    padding: 0 10px;
+    background: #0D1014;
+}
+
+.animal-rating {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+    margin-top: 180px;
+}
+
+.animal-rating__btn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+}
+.rating__btn {
+    background-color: #1D1F25;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    padding: 5px 55px;
+    color: rgba(113,113,113,.7);
+    font-size: 15px;
+}
+    .rating__btn.popular:hover {
+        color: #FDA458;
+        background-color: #24262D;
+        border: 1px solid #FDA458;
+    }
+    .rating__btn.unpopular:hover {
+        color: #6390DE;
+        background-color: #24262D;
+        border: 1px solid #6390DE;
+    }
+
+.animal__form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 130px;
+    gap: 15px;
+}
+.animal__form-search{
+    display: flex;
+    justify-content: space-between;
+}
+.animal__form-input {
+    width: 50%;
+    border: none;
+    padding: 3px 5px;
+    background-color: rgb(255,255,255);
+    outline: none;
+}
+.animal__form-search-btn {
+    width:10%;
+    background-color: #1D1F25;
+    padding: 3px 5px;
+    color: rgba(113,113,113,.7);
+}
+.animal-search__container {
+    width: 100%;
+    max-width: 1020px;
+    margin: 120px auto;
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 50px 20%;
+}
+.animal-card > img {
+    width: 150px;
+    height: 210px;
+    
+}
+.animal-card {
+    position: relative;
+    border: 2px solid #e0e0e0;
+    cursor: pointer;
+}
+.animal-card__name{
+    display: none;
+    position: absolute;
+    width:100%;
+    text-align: center;
+    top:50%;
+    transform:translateY(-50%);
+    color: #e0e0e0;
+    backdrop-filter: blur(5px);
+    padding:5px 0;
+}
+.animal-card:hover .animal-card__name {
+    display:block;
+}
+
+
+
+

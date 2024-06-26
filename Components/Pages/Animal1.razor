@@ -1,0 +1,80 @@
+﻿@page "/animal"
+@using Ocean.Data.Models
+@using Ocean.Services
+@inject OceanService oceanService;
+@rendermode RenderMode.InteractiveServer
+
+<Header/>
+<div class="animal"> 
+    <div class="animal-header">
+        <img src="/images/Animal/new12.png" alt="Alternate Text" />
+        <h1>UnderWater</h1>
+        <p>Learn more interesting facts about the inhabitants of the underwater world</p>
+    </div>
+    <div class="animal-container">
+        <div class="main-container">
+            <div class="animal-rating">
+                <div class="animal-rating__btn">
+                    <button class="rating__btn popular" @onclick="GetAnimalByRatingDown">Popular</button>
+                    <button class="rating__btn unpopular" @onclick=" GetAnimalByRating">Unpopular</button>
+                </div>
+                @foreach (var animal in animalRating)
+                {
+                    <AnimalCard animalName="@animal.AnimalName" path="@animal.PathPhoto" />
+                }
+            </div>
+        </div>
+    </div>
+    
+        <div class="animal__form">
+            
+            <div class="animal__form-search">
+                <button class="animal__form-search-btn" @onclick="GetAnimalByNameUp">NameUp</button>
+                <input class="animal__form-input"@bind="search"  @oninput="GetSearchAnimal"/>
+                <button class="animal__form-search-btn" @onclick="GetAnimalByNameDown">NameDown</button>
+            </div>
+        <div class="animal-search__container">
+            @foreach (var animal in animalsList)
+            {
+                <AnimalCard animalName="@animal.AnimalName" path="@animal.PathPhoto" />
+            }
+        </div>
+    </div> 
+</div>
+
+
+@code {
+    private string search = "";
+    private List<Animal> animalRating = new List<Animal>();
+    private List<Animal> animalsList = new List<Animal>();
+
+    protected override void OnInitialized()
+    {
+        animalsList = oceanService.GetAnimal();
+        animalRating = oceanService.GetAnimalByRating();
+    }
+    private void GetAnimalByRating()
+    {
+        animalRating = oceanService.GetAnimalByRating();
+    }
+    private void GetAnimalByRatingDown()
+    {
+        animalRating = oceanService.GetAnimalByRatingDown();
+    }
+
+    private void GetSearchAnimal(ChangeEventArgs e)
+    {
+        search = e.Value.ToString();
+        animalsList = oceanService.SearchAnimal(search);
+    }
+
+    private void GetAnimalByNameUp()
+    {
+        animalsList = oceanService.GetAnimalByName();
+    }
+    private void GetAnimalByNameDown()
+    {
+        animalsList = oceanService.GetAnimalByNameDown();
+    }
+
+}

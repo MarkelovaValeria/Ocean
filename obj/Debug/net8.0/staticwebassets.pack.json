@@ -17,6 +17,58 @@
       "PackagePath": "staticwebassets\\favicon.png"
     },
     {
+      "Id": "C:\\Users\\Acer\\source\\repos\\Ocean\\Ocean\\wwwroot\\images\\Animal\\1.png",
+      "PackagePath": "staticwebassets\\images\\Animal\\1.png"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\source\\repos\\Ocean\\Ocean\\wwwroot\\images\\Animal\\10.png",
+      "PackagePath": "staticwebassets\\images\\Animal\\10.png"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\source\\repos\\Ocean\\Ocean\\wwwroot\\images\\Animal\\2.png",
+      "PackagePath": "staticwebassets\\images\\Animal\\2.png"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\source\\repos\\Ocean\\Ocean\\wwwroot\\images\\Animal\\3.png",
+      "PackagePath": "staticwebassets\\images\\Animal\\3.png"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\source\\repos\\Ocean\\Ocean\\wwwroot\\images\\Animal\\4.png",
+      "PackagePath": "staticwebassets\\images\\Animal\\4.png"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\source\\repos\\Ocean\\Ocean\\wwwroot\\images\\Animal\\5.png",
+      "PackagePath": "staticwebassets\\images\\Animal\\5.png"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\source\\repos\\Ocean\\Ocean\\wwwroot\\images\\Animal\\6.png",
+      "PackagePath": "staticwebassets\\images\\Animal\\6.png"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\source\\repos\\Ocean\\Ocean\\wwwroot\\images\\Animal\\7.png",
+      "PackagePath": "staticwebassets\\images\\Animal\\7.png"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\source\\repos\\Ocean\\Ocean\\wwwroot\\images\\Animal\\8.png",
+      "PackagePath": "staticwebassets\\images\\Animal\\8.png"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\source\\repos\\Ocean\\Ocean\\wwwroot\\images\\Animal\\9.png",
+      "PackagePath": "staticwebassets\\images\\Animal\\9.png"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\source\\repos\\Ocean\\Ocean\\wwwroot\\images\\Animal\\new1.png",
+      "PackagePath": "staticwebassets\\images\\Animal\\new1.png"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\source\\repos\\Ocean\\Ocean\\wwwroot\\images\\Animal\\new12.png",
+      "PackagePath": "staticwebassets\\images\\Animal\\new12.png"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\source\\repos\\Ocean\\Ocean\\wwwroot\\images\\Animal\\new3.png",
+      "PackagePath": "staticwebassets\\images\\Animal\\new3.png"
+    },
+    {
       "Id": "C:\\Users\\Acer\\source\\repos\\Ocean\\Ocean\\wwwroot\\images\\Bubbles\\1.png",
       "PackagePath": "staticwebassets\\images\\Bubbles\\1.png"
     },
@@ -41,6 +93,10 @@
       "PackagePath": "staticwebassets\\images\\Bubbles\\4(2).png"
     },
     {
+      "Id": "C:\\Users\\Acer\\source\\repos\\Ocean\\Ocean\\wwwroot\\images\\Coral\\1.png",
+      "PackagePath": "staticwebassets\\images\\Coral\\1.png"
+    },
+    {
       "Id": "C:\\Users\\Acer\\source\\repos\\Ocean\\Ocean\\wwwroot\\images\\Employers\\1.jpeg",
       "PackagePath": "staticwebassets\\images\\Employers\\1.jpeg"
     },
@@ -59,6 +115,10 @@
     {
       "Id": "C:\\Users\\Acer\\source\\repos\\Ocean\\Ocean\\wwwroot\\images\\Group 4.png",
       "PackagePath": "staticwebassets\\images\\Group 4.png"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\source\\repos\\Ocean\\Ocean\\wwwroot\\images\\Home.png",
+      "PackagePath": "staticwebassets\\images\\Home.png"
     },
     {
       "Id": "C:\\Users\\Acer\\source\\repos\\Ocean\\Ocean\\wwwroot\\images\\Locations\\1.jpeg",
@@ -103,6 +163,18 @@
     {
       "Id": "C:\\Users\\Acer\\source\\repos\\Ocean\\Ocean\\wwwroot\\images\\footer\\footer2.png",
       "PackagePath": "staticwebassets\\images\\footer\\footer2.png"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\source\\repos\\Ocean\\Ocean\\wwwroot\\images\\footer\\footer3.png",
+      "PackagePath": "staticwebassets\\images\\footer\\footer3.png"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\source\\repos\\Ocean\\Ocean\\wwwroot\\images\\footer\\footer4.png",
+      "PackagePath": "staticwebassets\\images\\footer\\footer4.png"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\source\\repos\\Ocean\\Ocean\\wwwroot\\images\\modalBG.png",
+      "PackagePath": "staticwebassets\\images\\modalBG.png"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Ocean.Microsoft.AspNetCore.StaticWebAssets.props",

@@ -1,0 +1,49 @@
+﻿@page "/account"
+@using Ocean.Data.Login
+@using Ocean.Data.Models
+@using Ocean.Services
+@inject LogedInUser logedIn
+@inject OceanService oceanService;
+@rendermode RenderMode.InteractiveServer
+
+
+<Header/>
+
+ <div class="account">
+    <img src="#" alt="Alternate Text" />     
+    <div class="account1">
+        <EditForm Model="@users" class="account__form">
+            <DataAnnotationsValidator />
+            <InputText @bind-Value="users.Surname" class="modal-login__form-input" placeholder="Enter surname" />
+            <ValidationMessage For="@(()=>users.Surname)" class="order-visiting__form-validation" />
+            <InputText @bind-Value="users.UserName" class="modal-login__form-input" placeholder="Enter name" />
+            <ValidationMessage For="@(()=>users.UserName)" class="order-visiting__form-validation" />
+            <InputText @bind-Value="users.Password" class="modal-login__form-input" type="password" placeholder="Enter password" />
+            <ValidationMessage For="@(()=>users.Password)" class="order-visiting__form-validation" />
+            <InputText @bind-Value="users.Phone" class="modal-login__form-input" placeholder="Enter phone" />
+            <ValidationMessage For="@(()=>users.Phone)" class="order-visiting__form-validation" />
+            <InputText @bind-Value="users.Email" class="modal-login__form-input" placeholder="Enter email" />
+            <ValidationMessage For="@(()=>users.Email)" class="order-visiting__form-validation" />
+            <button type="submit" class="modal-login__form-btn" @onclick="()=>EditAccount(users)">Edit</button>
+        </EditForm>
+        <button class="modal-login__btn-exit" @onclick="()=>Exit(users)">Exit</button>
+    </div>
+ </div>
+
+@code {
+    private Users users = new Users();
+
+    protected override void OnInitialized()
+    {
+        users = logedIn.users;
+    }
+
+    private void EditAccount(Users user)
+    {
+        oceanService.EditAccount(user);
+    }
+    private void Exit(Users user)
+    {
+        oceanService.ExitAccount(user);
+    }
+}

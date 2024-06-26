@@ -12,6 +12,7 @@ namespace Ocean.Data.Models
         [Required]
         [MaxLength(256)]
         public string AnimalDescription { get; set; }
+        public int Rating { get; set; }
         [Required]
         public string PathPhoto { get; set; }
     }

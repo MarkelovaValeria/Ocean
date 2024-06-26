@@ -44,9 +44,86 @@ namespace Ocean.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("Rating")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
 
                     b.ToTable("Animals");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            AnimalDescription = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada. Nullam ac erat ante. ",
+                            AnimalName = "Stonefish",
+                            PathPhoto = "/images/Animal/2.png",
+                            Rating = 3
+                        },
+                        new
+                        {
+                            Id = 2,
+                            AnimalDescription = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada. Nullam ac erat ante. ",
+                            AnimalName = "Sea angel",
+                            PathPhoto = "/images/Animal/3.png",
+                            Rating = 5
+                        },
+                        new
+                        {
+                            Id = 3,
+                            AnimalDescription = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada. Nullam ac erat ante. ",
+                            AnimalName = "Lion fish",
+                            PathPhoto = "/images/Animal/4.png",
+                            Rating = 4
+                        },
+                        new
+                        {
+                            Id = 4,
+                            AnimalDescription = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada. Nullam ac erat ante. ",
+                            AnimalName = "Hammerhead",
+                            PathPhoto = "/images/Animal/5.png",
+                            Rating = 4
+                        },
+                        new
+                        {
+                            Id = 5,
+                            AnimalDescription = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada. Nullam ac erat ante. ",
+                            AnimalName = "Fugu fish",
+                            PathPhoto = "/images/Animal/6.png",
+                            Rating = 4
+                        },
+                        new
+                        {
+                            Id = 6,
+                            AnimalDescription = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada. Nullam ac erat ante. ",
+                            AnimalName = "Whale",
+                            PathPhoto = "/images/Animal/7.png",
+                            Rating = 4
+                        },
+                        new
+                        {
+                            Id = 7,
+                            AnimalDescription = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada. Nullam ac erat ante. ",
+                            AnimalName = "Dumbo octopus",
+                            PathPhoto = "/images/Animal/8.png",
+                            Rating = 5
+                        },
+                        new
+                        {
+                            Id = 8,
+                            AnimalDescription = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada. Nullam ac erat ante. ",
+                            AnimalName = "Turtle",
+                            PathPhoto = "/images/Animal/9.png",
+                            Rating = 5
+                        },
+                        new
+                        {
+                            Id = 9,
+                            AnimalDescription = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada. Nullam ac erat ante.",
+                            AnimalName = "Stingray",
+                            PathPhoto = "/images/Animal/10.png",
+                            Rating = 5
+                        });
                 });
 
             modelBuilder.Entity("Ocean.Data.Models.Employers", b =>

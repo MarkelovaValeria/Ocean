@@ -26,6 +26,18 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTWFpbkxheW91dC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Acer/source/repos/Ocean/Ocean/Components/Pages/Account.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBY2NvdW50LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Acer/source/repos/Ocean/Ocean/Components/Pages/Animal1.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBbmltYWwxLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Acer/source/repos/Ocean/Ocean/Components/Pages/AnimalCard.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBbmltYWxDYXJkLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Acer/source/repos/Ocean/Ocean/Components/Pages/Employees.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFbXBsb3llZXMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
@@ -44,6 +56,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Acer/source/repos/Ocean/Ocean/Components/Pages/Locations.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xMb2NhdGlvbnMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Acer/source/repos/Ocean/Ocean/Components/Pages/ModalLogin.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xNb2RhbExvZ2luLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Acer/source/repos/Ocean/Ocean/Components/Pages/Ocean1.razor]

@@ -5,8 +5,8 @@
 @rendermode RenderMode.InteractiveServer
 
 <PageTitle>Home</PageTitle>
-
-
+<Header eventOnModalOpen="ModalOpen" />
+<ModalLogin isOpen="IsModalOpen" eventOnModalClose="ModalClose" />
     <div class="intro">
         <div class="main-container">
             <div class="intro__inner">
@@ -74,10 +74,24 @@
     </div>
 
 @code{
-    public List<Employers> employersList = new List<Employers>();
+    private List<Employers> employersList = new List<Employers>();
 
     protected override void OnInitialized()
     {
         employersList = oceanService.GetEmployers();
+    }
+
+    private bool IsModalOpen = false;
+
+    private void ModalOpen()
+    {
+        IsModalOpen = true;
+        Console.WriteLine(IsModalOpen);
+        StateHasChanged();
+    }
+
+    private void ModalClose()
+    {
+        IsModalOpen = false;
     }
 }

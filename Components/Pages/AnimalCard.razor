@@ -1,0 +1,10 @@
+﻿<div class="animal-card">
+    <img src="@path" alt="Alternate Text" />
+    <p class="animal-card__name">@animalName</p>
+</div>
+@code {
+    [Parameter]
+    public string path{ get; set; }
+    [Parameter]
+    public string animalName { get; set; }
+}

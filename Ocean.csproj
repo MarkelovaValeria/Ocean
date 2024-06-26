@@ -9,6 +9,7 @@
   <ItemGroup>
     <Folder Include="Migrations\" />
     <Folder Include="wwwroot\images\Employers\" />
+    <Folder Include="wwwroot\images\Animal\" />
     <Folder Include="wwwroot\images\Oceans\" />
   </ItemGroup>
 
@@ -19,6 +20,7 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="NetcodeHub.Packages.Components.Modal" Version="1.0.0" />
   </ItemGroup>
 
 </Project>
