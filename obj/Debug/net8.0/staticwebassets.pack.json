@@ -25,12 +25,20 @@
       "PackagePath": "staticwebassets\\images\\Animal\\10.png"
     },
     {
+      "Id": "C:\\Users\\Acer\\source\\repos\\Ocean\\Ocean\\wwwroot\\images\\Animal\\10new.png",
+      "PackagePath": "staticwebassets\\images\\Animal\\10new.png"
+    },
+    {
       "Id": "C:\\Users\\Acer\\source\\repos\\Ocean\\Ocean\\wwwroot\\images\\Animal\\2.png",
       "PackagePath": "staticwebassets\\images\\Animal\\2.png"
     },
     {
       "Id": "C:\\Users\\Acer\\source\\repos\\Ocean\\Ocean\\wwwroot\\images\\Animal\\3.png",
       "PackagePath": "staticwebassets\\images\\Animal\\3.png"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\source\\repos\\Ocean\\Ocean\\wwwroot\\images\\Animal\\3new.png",
+      "PackagePath": "staticwebassets\\images\\Animal\\3new.png"
     },
     {
       "Id": "C:\\Users\\Acer\\source\\repos\\Ocean\\Ocean\\wwwroot\\images\\Animal\\4.png",
@@ -53,20 +61,60 @@
       "PackagePath": "staticwebassets\\images\\Animal\\8.png"
     },
     {
+      "Id": "C:\\Users\\Acer\\source\\repos\\Ocean\\Ocean\\wwwroot\\images\\Animal\\8new.png",
+      "PackagePath": "staticwebassets\\images\\Animal\\8new.png"
+    },
+    {
       "Id": "C:\\Users\\Acer\\source\\repos\\Ocean\\Ocean\\wwwroot\\images\\Animal\\9.png",
       "PackagePath": "staticwebassets\\images\\Animal\\9.png"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\source\\repos\\Ocean\\Ocean\\wwwroot\\images\\Animal\\9new.png",
+      "PackagePath": "staticwebassets\\images\\Animal\\9new.png"
     },
     {
       "Id": "C:\\Users\\Acer\\source\\repos\\Ocean\\Ocean\\wwwroot\\images\\Animal\\new1.png",
       "PackagePath": "staticwebassets\\images\\Animal\\new1.png"
     },
     {
+      "Id": "C:\\Users\\Acer\\source\\repos\\Ocean\\Ocean\\wwwroot\\images\\Animal\\new10.png",
+      "PackagePath": "staticwebassets\\images\\Animal\\new10.png"
+    },
+    {
       "Id": "C:\\Users\\Acer\\source\\repos\\Ocean\\Ocean\\wwwroot\\images\\Animal\\new12.png",
       "PackagePath": "staticwebassets\\images\\Animal\\new12.png"
     },
     {
+      "Id": "C:\\Users\\Acer\\source\\repos\\Ocean\\Ocean\\wwwroot\\images\\Animal\\new2.png",
+      "PackagePath": "staticwebassets\\images\\Animal\\new2.png"
+    },
+    {
       "Id": "C:\\Users\\Acer\\source\\repos\\Ocean\\Ocean\\wwwroot\\images\\Animal\\new3.png",
       "PackagePath": "staticwebassets\\images\\Animal\\new3.png"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\source\\repos\\Ocean\\Ocean\\wwwroot\\images\\Animal\\new4.png",
+      "PackagePath": "staticwebassets\\images\\Animal\\new4.png"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\source\\repos\\Ocean\\Ocean\\wwwroot\\images\\Animal\\new5.png",
+      "PackagePath": "staticwebassets\\images\\Animal\\new5.png"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\source\\repos\\Ocean\\Ocean\\wwwroot\\images\\Animal\\new6.png",
+      "PackagePath": "staticwebassets\\images\\Animal\\new6.png"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\source\\repos\\Ocean\\Ocean\\wwwroot\\images\\Animal\\new7.png",
+      "PackagePath": "staticwebassets\\images\\Animal\\new7.png"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\source\\repos\\Ocean\\Ocean\\wwwroot\\images\\Animal\\new8.png",
+      "PackagePath": "staticwebassets\\images\\Animal\\new8.png"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\source\\repos\\Ocean\\Ocean\\wwwroot\\images\\Animal\\new9.png",
+      "PackagePath": "staticwebassets\\images\\Animal\\new9.png"
     },
     {
       "Id": "C:\\Users\\Acer\\source\\repos\\Ocean\\Ocean\\wwwroot\\images\\Bubbles\\1.png",
@@ -95,6 +143,18 @@
     {
       "Id": "C:\\Users\\Acer\\source\\repos\\Ocean\\Ocean\\wwwroot\\images\\Coral\\1.png",
       "PackagePath": "staticwebassets\\images\\Coral\\1.png"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\source\\repos\\Ocean\\Ocean\\wwwroot\\images\\Coral\\2.png",
+      "PackagePath": "staticwebassets\\images\\Coral\\2.png"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\source\\repos\\Ocean\\Ocean\\wwwroot\\images\\Coral\\new1.png",
+      "PackagePath": "staticwebassets\\images\\Coral\\new1.png"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\source\\repos\\Ocean\\Ocean\\wwwroot\\images\\Coral\\new2.png",
+      "PackagePath": "staticwebassets\\images\\Coral\\new2.png"
     },
     {
       "Id": "C:\\Users\\Acer\\source\\repos\\Ocean\\Ocean\\wwwroot\\images\\Employers\\1.jpeg",
@@ -141,6 +201,10 @@
       "PackagePath": "staticwebassets\\images\\Ocean3.png"
     },
     {
+      "Id": "C:\\Users\\Acer\\source\\repos\\Ocean\\Ocean\\wwwroot\\images\\Oceanarium\\Group 29.png",
+      "PackagePath": "staticwebassets\\images\\Oceanarium\\Group 29.png"
+    },
+    {
       "Id": "C:\\Users\\Acer\\source\\repos\\Ocean\\Ocean\\wwwroot\\images\\Oceans\\1.png",
       "PackagePath": "staticwebassets\\images\\Oceans\\1.png"
     },
@@ -155,6 +219,14 @@
     {
       "Id": "C:\\Users\\Acer\\source\\repos\\Ocean\\Ocean\\wwwroot\\images\\Oceans\\4.png",
       "PackagePath": "staticwebassets\\images\\Oceans\\4.png"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\source\\repos\\Ocean\\Ocean\\wwwroot\\images\\Sunshine\\RomanKovinia.jpg",
+      "PackagePath": "staticwebassets\\images\\Sunshine\\RomanKovinia.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Acer\\source\\repos\\Ocean\\Ocean\\wwwroot\\images\\Sunshine\\RomanKovinia1.jpg",
+      "PackagePath": "staticwebassets\\images\\Sunshine\\RomanKovinia1.jpg"
     },
     {
       "Id": "C:\\Users\\Acer\\source\\repos\\Ocean\\Ocean\\wwwroot\\images\\footer\\Group 20.png",

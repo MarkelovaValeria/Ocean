@@ -10,7 +10,7 @@
 <Header/>
 
  <div class="account">
-    <img src="#" alt="Alternate Text" />     
+    <img src="/images/Sunshine/RomanKovinia1.jpg" alt="Alternate Text" />     
     <div class="account1">
         <EditForm Model="@users" class="account__form">
             <DataAnnotationsValidator />
@@ -24,9 +24,9 @@
             <ValidationMessage For="@(()=>users.Phone)" class="order-visiting__form-validation" />
             <InputText @bind-Value="users.Email" class="modal-login__form-input" placeholder="Enter email" />
             <ValidationMessage For="@(()=>users.Email)" class="order-visiting__form-validation" />
-            <button type="submit" class="modal-login__form-btn" @onclick="()=>EditAccount(users)">Edit</button>
+            <button type="submit" class="modal-login__form-btn edit" @onclick="()=>EditAccount(users)">Edit</button>
         </EditForm>
-        <button class="modal-login__btn-exit" @onclick="()=>Exit(users)">Exit</button>
+        <NavLink href="/" class="modal-login__btn-exit" @onclick="()=>Exit(users)">Exit</NavLink>
     </div>
  </div>
 
@@ -45,5 +45,7 @@
     private void Exit(Users user)
     {
         oceanService.ExitAccount(user);
+        logedIn.users = null;
+        logedIn.IsLogedIn = false;
     }
 }

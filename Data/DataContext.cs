@@ -40,7 +40,7 @@ namespace Ocean.Data
                     AnimalName = "Stonefish",
                     AnimalDescription = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada. Nullam ac erat ante. ",
                     Rating = 3,
-                    PathPhoto = "/images/Animal/2.png"
+                    PathPhoto = "/images/Animal/new2.png"
                 },
                 new Animal
                 {
@@ -48,7 +48,7 @@ namespace Ocean.Data
                     AnimalName = "Sea angel",
                     AnimalDescription = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada. Nullam ac erat ante. ",
                     Rating = 5,
-                    PathPhoto = "/images/Animal/3.png"
+                    PathPhoto = "/images/Animal/3new.png"
                 },
                 new Animal
                 {
@@ -56,7 +56,7 @@ namespace Ocean.Data
                     AnimalName = "Lion fish",
                     AnimalDescription = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada. Nullam ac erat ante. ",
                     Rating = 4,
-                    PathPhoto = "/images/Animal/4.png"
+                    PathPhoto = "/images/Animal/new4.png"
                 },
                 new Animal
                 {
@@ -64,7 +64,7 @@ namespace Ocean.Data
                     AnimalName = "Hammerhead",
                     AnimalDescription = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada. Nullam ac erat ante. ",
                     Rating = 4,
-                    PathPhoto = "/images/Animal/5.png"
+                    PathPhoto = "/images/Animal/new5.png"
                 },
                 new Animal
                 {
@@ -72,7 +72,7 @@ namespace Ocean.Data
                     AnimalName = "Fugu fish",
                     AnimalDescription = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada. Nullam ac erat ante. ",
                     Rating = 4,
-                    PathPhoto = "/images/Animal/6.png"
+                    PathPhoto = "/images/Animal/new6.png"
                 },
                 new Animal
                 {
@@ -80,7 +80,7 @@ namespace Ocean.Data
                     AnimalName = "Whale",
                     AnimalDescription = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada. Nullam ac erat ante. ",
                     Rating = 4,
-                    PathPhoto = "/images/Animal/7.png"
+                    PathPhoto = "/images/Animal/new7.png"
                 },
                 new Animal
                 {
@@ -88,15 +88,15 @@ namespace Ocean.Data
                     AnimalName = "Dumbo octopus",
                     AnimalDescription = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada. Nullam ac erat ante. ",
                     Rating = 5,
-                    PathPhoto = "/images/Animal/8.png"
+                    PathPhoto = "/images/Animal/8new.png"
                 },
                 new Animal
                 {
                     Id = 8,
                     AnimalName = "Turtle",
                     AnimalDescription = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada. Nullam ac erat ante. ",
-                    Rating = 5,
-                    PathPhoto = "/images/Animal/9.png"
+                    Rating = 4,
+                    PathPhoto = "/images/Animal/9new.png"
                 },
                 new Animal
                 {
@@ -104,7 +104,7 @@ namespace Ocean.Data
                     AnimalName = "Stingray",
                     AnimalDescription = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada. Nullam ac erat ante.",
                     Rating = 5,
-                    PathPhoto = "/images/Animal/10.png"
+                    PathPhoto = "/images/Animal/10new.png"
                 });
 
 
