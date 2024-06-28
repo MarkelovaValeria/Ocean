@@ -42,9 +42,9 @@
                 <option value="18:00">18:00</option>
             </InputSelect>
             <ValidationMessage For="@(() => orders.Time)" class="order-visiting__form-validation" />
-            <InputText @bind-Value="@orders.UserFullName" class="order-visiting__form-input" />
+            <InputText @bind-Value="@orders.UserFullName" class="order-visiting__form-input" placeholder="Enter full name"/>
             <ValidationMessage For="@(() => orders.UserFullName)" class="order-visiting__form-validation" />
-            <InputText @bind-Value="@orders.UserEmail" class="order-visiting__form-input" />
+            <InputText @bind-Value="@orders.UserEmail" class="order-visiting__form-input" placeholder="Eneter email" />
             <ValidationMessage For="@(() => orders.UserEmail)" class="order-visiting__form-validation" />
             <button type="submit" class="order-visiting__form-btn">Order</button>
         </EditForm>

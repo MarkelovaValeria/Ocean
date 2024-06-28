@@ -4,13 +4,14 @@
 @using Ocean.Services
 @inject LogedInUser logedIn
 @inject OceanService oceanService;
+@inject NavigationManager navigationManager
 @rendermode RenderMode.InteractiveServer
 
 
 <Header/>
 
  <div class="account">
-    <img src="/images/Sunshine/RomanKovinia1.jpg" alt="Alternate Text" />     
+    <img src="/images/Sunshine/Cat.jpg" alt="Alternate Text" />     
     <div class="account1">
         <EditForm Model="@users" class="account__form">
             <DataAnnotationsValidator />
@@ -26,7 +27,8 @@
             <ValidationMessage For="@(()=>users.Email)" class="order-visiting__form-validation" />
             <button type="submit" class="modal-login__form-btn edit" @onclick="()=>EditAccount(users)">Edit</button>
         </EditForm>
-        <NavLink href="/" class="modal-login__btn-exit" @onclick="()=>Exit(users)">Exit</NavLink>
+        <button class="modal-login__btn-exit" @onclick="()=>Exit(users)">Exit</button>
+        <button class="modal-login__btn-exit" @onclick="()=>DeleteAccount(users)">Delete</button>
     </div>
  </div>
 
@@ -44,8 +46,15 @@
     }
     private void Exit(Users user)
     {
+        logedIn.users = null;
+        logedIn.IsLogedIn = false;
+        navigationManager.NavigateTo("/");
+    }
+    private void DeleteAccount(Users user)
+    {
         oceanService.ExitAccount(user);
         logedIn.users = null;
         logedIn.IsLogedIn = false;
+        navigationManager.NavigateTo("/");
     }
 }

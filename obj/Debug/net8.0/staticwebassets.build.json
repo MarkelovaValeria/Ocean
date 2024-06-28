@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "o3epNbz7czKt3U1WHkYD5GH0STO4NzkcQHOOmAkg+Vk=",
+  "Hash": "t2aynKeEO2ZdKCA9cxEPiWdVDTFp54+bPyQR1/nfKXs=",
   "Source": "Ocean",
   "BasePath": "_content/Ocean",
   "Mode": "Default",
@@ -1212,6 +1212,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\Oceans\\4.png"
+    },
+    {
+      "Identity": "C:\\Users\\Acer\\source\\repos\\Ocean\\Ocean\\wwwroot\\images\\Sunshine\\Cat.jpg",
+      "SourceId": "Ocean",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Acer\\source\\repos\\Ocean\\Ocean\\wwwroot\\",
+      "BasePath": "_content/Ocean",
+      "RelativePath": "images/Sunshine/Cat.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\Sunshine\\Cat.jpg"
     },
     {
       "Identity": "C:\\Users\\Acer\\source\\repos\\Ocean\\Ocean\\wwwroot\\images\\Sunshine\\RomanKovinia.jpg",
